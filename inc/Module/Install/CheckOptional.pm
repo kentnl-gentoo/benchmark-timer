@@ -13,7 +13,7 @@ use vars qw( @ISA $VERSION );
 use Module::Install::Base;
 @ISA = qw( Module::Install::Base Module::AutoInstall );
 
-$VERSION = sprintf "%d.%02d%02d", q/0.10.01/ =~ /(\d+)/g;
+$VERSION = sprintf "%d.%02d%02d", q/0.10.03/ =~ /(\d+)/g;
 
 # ---------------------------------------------------------------------------
 
