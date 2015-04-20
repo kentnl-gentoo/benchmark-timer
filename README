@@ -54,7 +54,7 @@ Just "perldoc Benchmark::Timer". After installation on Unix systems,
 you can also do "man Benchmark::Timer".
 
 
-HOMEPAGE
+RESOURCES
 
 The CPAN Page:
 http://search.cpan.org/~dcoppit/Benchmark-Timer/
@@ -62,23 +62,15 @@ http://search.cpan.org/~dcoppit/Benchmark-Timer/
 The GitHub page:
 https://github.com/coppit/benchmark-timer/
 
-
-REPORTING BUGS
-
-https://github.com/coppit/benchmark-timer/issues
+Bug and feature tracking:
+http://rt.cpan.org/Public/Dist/Display.html?Name=Benchmark-Timer
 
 
 COPYRIGHT
 
 Copyright (c) 2001-2002 Andrew Ho. Copyright (c) 2004-2015 David Coppit. All rights
-reserved, save those granted by the license.
-
-
-LICENSE
-
-This code is distributed under the GNU General Public License (GPL). See the
-file LICENSE in the distribution, http://www.opensource.org/gpl-license.html,
-and http://www.opensource.org/.
+reserved, save those granted by the license. See the file LICENSE for
+licensing terms.
 
 
 AUTHOR

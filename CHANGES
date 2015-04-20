@@ -1,4 +1,15 @@
-Version 0.7104: Sat Mar 28 2015
+Version 0.7106: Mon Apr 20 2015
+- Clarify licensing terms
+- Move verbose testing to a private module, and implement it in a way that
+  doesn't require editing the Makefile after it is generated.
+
+Version 0.7105: Sun Apr 12 2015
+- Make basic.t 'Nonzero single result' test reliable
+  http://www.cpantesters.org/cpan/report/abcfc65a-de71-11e4-a1d1-8536eb4f9f07
+- Enable verbose testing for CPAN-testers
+- Consolidate issue tracking at rt.cpan.org
+
+Version 0.7104: Sat Apr 4 2015
 - Bundle Module::AutoInstall to prevent breaks when people don't have it
   installed already. Thanks to Andreas Koenig <andk@cpan.org> for the report,
   and Paul Howarth <paul@city-fan.org> for giving me a kick in the pants to

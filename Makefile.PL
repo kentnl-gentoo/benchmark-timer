@@ -2,9 +2,15 @@
 
 use strict;
 
+# For PRIVATE Module::Install extensions
+use lib 'private-lib';
+
 use inc::Module::Install;
 
 all_from('lib/Benchmark/Timer.pm');
+
+auto_set_bugtracker;
+githubmeta;
 
 requires(
   'Time::HiRes' => 0,
@@ -17,12 +23,11 @@ test_requires(
 check_optional('Statistics::PointEstimation' => 0,
   "Install Statistics::PointEstimation for statistical sampling support\n");
 
-# Module::Install doesn't figure out that Module::Install::CheckOptional needs
-# this. Include it manually.
-include(
-  'Module::AutoInstall' => 0,
-);
-
 no_index('delta.pl');
+
+license 'gpl2';
+auto_license(holder => 'David Coppit');
+
+enable_verbose_cpan_testing();
 
 WriteAll();

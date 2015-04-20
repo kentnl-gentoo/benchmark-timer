@@ -13,17 +13,16 @@ use vars qw( @ISA $VERSION );
 use Module::Install::Base;
 @ISA = qw( Module::Install::Base Module::AutoInstall );
 
-$VERSION = sprintf "%d.%02d%02d", q/0.10.03/ =~ /(\d+)/g;
+$VERSION = sprintf "%d.%02d%02d", q/0.11.00/ =~ /(\d+)/g;
 
 # ---------------------------------------------------------------------------
 
-sub check_optional
-{
-  my $self = shift;
+sub check_optional {
+  my ($self, $module, $version, $message) = @_;
 
-	my $module = shift;
-	my $version = shift;
-	my $message = shift;
+  # Tell Module::Install to include this, since we use it.
+  $self->perl_version('5.005');
+  $self->include('Module::AutoInstall', 0);
 
   croak "check_optional requires a dependency and version such as \"Carp => 1.03\""
     unless defined $module and defined $version;
@@ -43,4 +42,4 @@ EOF
 
 # ---------------------------------------------------------------------------
 
-#line 98
+#line 96
