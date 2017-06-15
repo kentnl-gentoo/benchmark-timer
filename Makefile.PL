@@ -5,7 +5,7 @@ use strict;
 # For PRIVATE Module::Install extensions
 use lib 'private-lib';
 
-use inc::Module::Install;
+use lib q[.]; use inc::Module::Install;
 
 all_from('lib/Benchmark/Timer.pm');
 
