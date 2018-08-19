@@ -3,7 +3,7 @@ LICENSE
 MANIFEST
 Makefile.PL
 README
-delta.pl
+examples/delta.pl
 TODO
 
 # The module files
